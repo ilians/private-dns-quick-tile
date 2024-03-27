@@ -39,7 +39,7 @@ public class PrivateDnsConfigActivity extends Activity {
 
         final Button okbutton = findViewById(R.id.button_ok);
 
-        if ((!hasPermission()) || togglestates.getBoolean("first_run", true) ){
+        if ((!hasPermission()) || togglestates.getBoolean("first_run", true)) {
             HelpMenu();
             editor.putBoolean("first_run", false).commit();
         }
@@ -156,7 +156,7 @@ public class PrivateDnsConfigActivity extends Activity {
         LayoutInflater layoutInflater = LayoutInflater.from(PrivateDnsConfigActivity.this);
         View helpView = layoutInflater.inflate(R.layout.dialog_help, null);
 
-        VideoView videoView = helpView.findViewById(R.id.videoView);
+        VideoView videoView = helpView.findViewById(R.id.video_view);
         videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.terminal));
         videoView.start();
 
