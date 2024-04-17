@@ -16,7 +16,6 @@
             android:id="@+id/check_off"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:padding="15dp"
             android:text="@string/qt_off" />
 
@@ -31,7 +30,6 @@
             android:id="@+id/check_on"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:padding="15dp"
             android:text="@string/dns_on" />
     </RadioGroup>
@@ -44,8 +42,7 @@
         android:importantForAutofill="no"
         android:inputType="textUri"
         android:paddingVertical="10dp"
-        android:singleLine="true"
-        android:textSize="16sp" />
+        android:singleLine="true" />
 
     <Button
         android:id="@+id/button_ok"
